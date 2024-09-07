@@ -2,108 +2,32 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Vola</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F0F0F0;
-            color: #333;
-        }
-        header {
-            background-image: url('https://i.imgur.com/jiKnc2w.png');
-            background-size: cover;
-            height: 700px; /* Ajusta la altura según sea necesario */
-            background-position: center;
-            color: white; /* Color del texto, si es necesario */
-            background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-family: 'Open Sans', sans-serif;
-            color: #F8F9FA; /* Blanco - Claridad y pureza */
-            margin: 0;
-        }
-        nav {
-            margin-top: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: #F8F9FA; /* Blanco - Claridad y pureza */
-            font-size: 18px;
-        }
-        section {
-            padding: 50px;
-            text-align: center;
-            background-color: #FFFFFF; /* Blanco */
-        }
-        button {
-            font-family: 'Open Sans', sans-serif;
-            padding: 10px 20px;
-            background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #457B9D; /*Azul claro - Creatividad y frescura*/
-        }
-        
-        /* Estilos para la sección de servicios */
-        .services {
-            display: flex;
-            justify-content: space-around;
-            padding-top: 20px;
-        }
-        .service {
-            background-color: #F7F7F7; /* Fondo claro */
-            padding: 20px;
-            border: 1px solid #ddd;
-            width: 30%;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .service {
-            font-family: 'Open Sans', sans-serif; 
-        }
-        .service:hover {
-            transform: scale(1.05); /* Expande ligeramente el servicio */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
-        }
-        footer {
-            background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        /* Formulario de contacto */
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        form button {
-            width: 100%;
-        }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="estilos.css"> <!-- Enlace al archivo CSS -->
+    <meta name="description" content="Somos una agencia de Marketing para emprendedores y empresas"> <!-- Modificar -->
+    <meta name="keywords" content="Agencia de Marketing, Vola, Redes Sociales, Contenido, Instagram, Facebook"> <!-- Modificar -->
+    <meta name="theme-color" content="#1D3557">
+    <!-- SEO -->
+    <link rel="canonical" href="https://difigue10.github.io/vola.github.io/">
+    <meta name="author" content="Diana Vanessa Ruiz Figueroa">
+    <meta name="copyright" content="Vola">
+    <meta name="designer" content="Diana Vanessa Ruiz Figueroa">
+    <meta name="publisher" content="Diana Vanessa Ruiz Figueroa">
+    <link rel="shortcut icon" href="https://i.imgur.com/vG3cPIt.png"> <!-- Modificar -->
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vola | Agencia de Marketing">
+    <meta property="og:description" content="Somos una agencia de Marketing para emprendedores y empresas">
+    <meta property="og:url" content="https://difigue10.github.io/vola.github.io/">
+    <meta property="og:site_name" content="Vola | Agencia de Marketing">
 </head>
 <body>
 
     <header>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <h1>Vola</h1>
-            
+        <div class="header-container">
+            <h1>Vola</h1> 
             <nav>
                 <a href="#inicio">Inicio</a>
                 <a href="#servicios">Servicios</a>
@@ -112,8 +36,9 @@
             </nav>
         </div>
 
-        <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; height: 90%; width: 30%;">
-            <h2 style="font-weight: bold; margin: 0;">Agencia de Marketing Digital</h2>
+        <div class="header-container2">
+            <h2>Agencia de Marketing Digital</h2>
+            <h3>Estetica, tecnología y creatividad</h3>
         </div>
     </header>
 
@@ -129,7 +54,7 @@
             <div class="service">
                 <h3 style="color: #1D3557;">Branding</h3>
                 <p>Incrementa la percepción de valor de tu marca. Te acompañamos desde su creación, con el concepto creativo, el nombre, el logo y la identidad visual. Permítenos juntos hacer realidad tu sueño.</p>
-                <button onclick="window.location.href='detalle.html';">Detalle</button> <!-- Redirige a nueva página -->
+                <button onclick="window.location.href='Branding.html';">Detalle</button> <!-- Redirige a nueva página -->
             </div>
             
             
@@ -164,7 +89,6 @@
         
     </section>
 
-
     <section id="contacto">
         <h2>Contáctanos</h2>
         <p><strong>Teléfono:</strong> +51 949 102 741</p>
@@ -181,7 +105,7 @@
 
     <footer>
         <p>&copy; 2024 Vola - Todos los derechos reservados</p>
-        <p>Diseñado por Diana</p>
+        <p>Diseñado por Diana Vanessa Ruiz Figueroa</p>
     </footer>
 
 </body>

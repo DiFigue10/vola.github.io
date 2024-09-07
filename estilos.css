@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;
+    color: #333;
+}
+
+/*Hearder*/
+header {
+    background-image: url('https://i.imgur.com/jiKnc2w.png'); /*Imagen de fondo*/
+    background-size: cover; /* Opcional, ajusta la imagen de fondo para cubrir todo el área visible */
+    height: 700px; /* Ajusta la altura según sea necesario */
+    background-position: center 0;
+    color: white; /* Color del texto, si es necesario */
+    background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
+    padding: 20px; /*espacio alrededor del contenido*/
+    text-align: center; 
+    background-attachment: fixed; /*la imagen de fondo no se mueve*/
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #F8F9FA; /* Blanco - Claridad y pureza */
+    margin: 0;
+}
+
+.header-container nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header-container nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #F8F9FA; /* Blanco - Claridad y pureza */
+    font-size: 18px;
+}
+
+.header-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    width: 30%;
+}
+.header-container2 h2{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+}
+.header-container2 h3{
+    font-weight: normal; /* Esto elimina el estilo de negrita */
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0;
+}
+
+    
+
+
+section {
+    padding: 50px;
+    text-align: center;
+    background-color: #FFFFFF; /* Blanco */
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px;
+    background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #457B9D; /* Azul claro - Creatividad y frescura */
+}
+
+/* Estilos para la sección de servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.service {
+    background-color: #F7F7F7; /* Fondo claro */
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.service:hover {
+    transform: scale(1.05); /* Expande ligeramente el servicio */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+footer {
+    background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Formulario de contacto */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+}

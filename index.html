@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vola</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <style>
         /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #F0F0F0;
             color: #333;
         }
         header {
-            background-color: #2C3E50; /* Azul oscuro elegante */
+            background-image: url('https://i.imgur.com/jiKnc2w.png');
+            background-size: cover;
+            height: 700px; /* Ajusta la altura según sea necesario */
+            background-position: center;
+            color: white; /* Color del texto, si es necesario */
+            background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
             padding: 20px;
             text-align: center;
         }
         header h1 {
-            color: #ECF0F1; /* Blanco grisáceo */
+            font-family: 'Open Sans', sans-serif;
+            color: #F8F9FA; /* Blanco - Claridad y pureza */
             margin: 0;
         }
         nav {
@@ -29,7 +36,7 @@
         nav a {
             margin: 0 20px;
             text-decoration: none;
-            color: #ECF0F1;
+            color: #F8F9FA; /* Blanco - Claridad y pureza */
             font-size: 18px;
         }
         section {
@@ -38,15 +45,16 @@
             background-color: #FFFFFF; /* Blanco */
         }
         button {
+            font-family: 'Open Sans', sans-serif;
             padding: 10px 20px;
-            background-color: #E74C3C; /* Rojo brillante */
+            background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #C0392B; /* Rojo oscuro */
+            background-color: #457B9D; /*Azul claro - Creatividad y frescura*/
         }
         
         /* Estilos para la sección de servicios */
@@ -63,12 +71,15 @@
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
+        .service {
+            font-family: 'Open Sans', sans-serif; 
+        }
         .service:hover {
             transform: scale(1.05); /* Expande ligeramente el servicio */
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
         }
         footer {
-            background-color: #2C3E50;
+            background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
             padding: 20px;
             text-align: center;
             color: white;
@@ -90,44 +101,73 @@
 <body>
 
     <header>
-        <h1>Vola</h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contáctanos</a>
-        </nav>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>Vola</h1>
+            
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#agenda">Agenda</a>
+                <a href="#contacto">Contáctanos</a>
+            </nav>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; height: 90%; width: 30%;">
+            <h2 style="font-weight: bold; margin: 0;">Agencia de Marketing Digital</h2>
+        </div>
     </header>
 
     <section id="inicio">
-        <h2>Bienvenidos a Vola</h2>
+        <h2>¡Conocenos!</h2>
         <p>Somos una agencia de marketing enfocada en impulsar tu negocio al siguiente nivel con estrategias efectivas y creativas.</p>
-        <button onclick="window.location.href='https://wa.me/123456789';">Agenda ahora</button>
     </section>
 
     <section id="servicios">
-        <h2>Nuestros Servicios</h2>
+        <h2>¿Qué solucines ofrecemos?</h2>
+        <p>Te asesoramos en cada paso</p>
         <div class="services">
             <div class="service">
-                <h3>Producto 1</h3>
-                <p>Descripción breve del producto 1.</p>
-                <button onclick="window.location.href='https://wa.me/123456789';">Agenda ahora</button>
+                <h3 style="color: #1D3557;">Branding</h3>
+                <p>Incrementa la percepción de valor de tu marca. Te acompañamos desde su creación, con el concepto creativo, el nombre, el logo y la identidad visual. Permítenos juntos hacer realidad tu sueño.</p>
+                <button onclick="window.location.href='detalle.html';">Detalle</button> <!-- Redirige a nueva página -->
+            </div>
+            
+            
+            <div class="service">
+                <h3 style="color: #1D3557;">Social Media</h3>
+                <p>No se trata solo de obtener más likes o corazones. Estudiamos tu marca, identificamos tu audiencia y desarrollamos una comunicación estratégica para alcanzar el objetivo adecuado en cada plataforma social en la que debes tener presencia.</p>
+                <button onclick="window.location.href='https://wa.me/51949102741';">Detalle</button>
             </div>
             <div class="service">
-                <h3>Producto 2</h3>
-                <p>Descripción breve del producto 2.</p>
-                <button onclick="window.location.href='https://wa.me/123456789';">Agenda ahora</button>
-            </div>
-            <div class="service">
-                <h3>Producto 3</h3>
-                <p>Descripción breve del producto 3.</p>
-                <button onclick="window.location.href='https://wa.me/123456789';">Agenda ahora</button>
+                <h3 style="color: #1D3557;">Paid Media</h3>
+                <p>Si no te ven, no estás. Nuestro equipo de analistas certificados se encargará de posicionar tu sitio en los primeros lugares de los resultados de búsqueda, asegurando que siempre seas visible para tu audiencia.</p>
+                <button onclick="window.location.href='https://wa.me/51949102741';">Detalle</button>
             </div>
         </div>
     </section>
 
+    <section id="agenda">
+        <h2>Elige nuestro primer encuentro</h2>
+        <p>Aquí te presentamos algunos de los beneficios que obtienes al trabajar con nosotros.</p>
+        <div class="services">
+            <div class="service">
+                <h3>¿Necesitas que te guiemos?</h3>
+                <p>Te obsequiamos 30 minutos por tu primera asesoria</p>
+                <button onclick="window.location.href='https://wa.me/51949102741';">Agendar</button>
+            </div>
+            <div class="service">
+                <h3>¿Ya tienes claro lo que necesitas?</h3>
+                <p>Te ayudamos en cada paso que des</p>
+                <button onclick="window.location.href='https://wa.me/51949102741';">Agendar</button>
+            </div>
+        </div>
+        
+    </section>
+
+
     <section id="contacto">
         <h2>Contáctanos</h2>
-        <p><strong>Teléfono:</strong> +1 234 567 890</p>
+        <p><strong>Teléfono:</strong> +51 949 102 741</p>
         <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad, País</p>
         <p><strong>Correo:</strong> info@vola.com</p>
         

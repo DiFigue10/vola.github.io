@@ -24,11 +24,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .header-container h1 {
     font-family: 'Open Sans', sans-serif;
     color: #F8F9FA; /* Blanco - Claridad y pureza */
     margin: 0;
+    
 }
 
 .header-container nav {
@@ -40,8 +42,15 @@ header {
     margin: 0 20px;
     text-decoration: none;
     color: #F8F9FA; /* Blanco - Claridad y pureza */
-    font-size: 18px;
+    font-size: 18px; /* Tamaño normal del texto */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+
 }
+
+.header-container nav a:hover {
+    color: #DAA520;
+}
+
 
 .header-container2 {
     display: flex;
@@ -50,6 +59,7 @@ header {
     flex-direction: column;
     height: 90%;
     width: 30%;
+    
 }
 .header-container2 h2{
     font-weight: bold;
@@ -64,14 +74,48 @@ header {
 }
 
     
-
-
+/*Section*/
 section {
     padding: 50px;
     text-align: center;
     background-color: #FFFFFF; /* Blanco */
 }
 
+/*Section : Servicios*/
+#servicios{
+    background-color: #1D3557; /* Blanco */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+.header-container3{
+    color:#F8F9FA
+}
+
+/* Estilos para la sección de servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Añade espacio entre los elementos */
+}
+
+/*Estilo para cada servcio*/
+.service {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F7F7F7; /* Color de fondo de cada servicio */
+    border: 1px solid #ddd; /* Borde alrededor de cada servicio */
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.service:hover {
+    transform: scale(1.05); /* Expande ligeramente el servicio */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/*Button para los servicios*/
 button {
     font-family: 'Open Sans', sans-serif;
     padding: 10px 20px;
@@ -86,31 +130,9 @@ button:hover {
     background-color: #457B9D; /* Azul claro - Creatividad y frescura */
 }
 
-/* Estilos para la sección de servicios */
-.services {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-}
 
-.service {
-    background-color: #F7F7F7; /* Fondo claro */
-    padding: 20px;
-    border: 1px solid #ddd;
-    width: 30%;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.service {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.service:hover {
-    transform: scale(1.05); /* Expande ligeramente el servicio */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
+/*Footer*/
 footer {
     background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
     padding: 20px;

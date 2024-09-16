@@ -20,6 +20,13 @@ header {
     text-align: center; 
     background-attachment: fixed; /*la imagen de fondo no se mueve*/
 }
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    header {
+        background-attachment: scroll; /* Cambia a 'scroll' para móviles */
+        height: 500px; /* Puedes ajustar la altura para dispositivos móviles */
+    }
+}
 .header-container {
     display: flex;
     justify-content: space-between;

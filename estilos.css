@@ -26,26 +26,82 @@ header {
 
 /* Media query para pantallas pequeñas (móviles) */
 @media screen and (max-width: 800px) {
+    * {
+        box-sizing: border-box;
+    }
     body {
         font-size: 14px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
     }
     header {
         position: static;
 		height: auto;
+        max-width: 100%;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
     }
     .header-container{
         text-align: center;
+        max-width: 100%;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
     }
     .header-container2{
         position: static;
 		margin: 100px 0;
+        max-width: 100%;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
     }
     .header-container nav a {
         margin: 10px 20px;
     }
+    section {
+        max-width: 100%;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+    }
+    footer {
+        max-width: 100%;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+    }
     
 }
+
+@media screen and (max-width: 800px) {
+    .service, .header-container2 {
+        width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2, h3 {
+        font-size: 24px; /* Reduce el tamaño de los encabezados en pantallas pequeñas */
+    }
+
+    .header-container2 h2 {
+        font-size: 32px; /* Ajusta el tamaño del título principal */
+    }
+
+    .service p {
+        font-size: 14px; /* Reduce el tamaño del texto en los servicios */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta el tamaño del texto en los botones */
+        padding: 8px 16px; /* Ajusta el padding en los botones */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+    }
+
+    .service {
+        width: 100%; /* Asegura que ocupen todo el ancho disponible */
+    }
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;

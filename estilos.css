@@ -12,20 +12,28 @@ body {
 header {
     background-image: url('https://i.imgur.com/jiKnc2w.png'); /*Imagen de fondo*/
     background-size: cover; /* Opcional, ajusta la imagen de fondo para cubrir todo el área visible */
-    height: 700px; /* Ajusta la altura según sea necesario */
-    background-position: center 0;
-    color: white; /* Color del texto, si es necesario */
+    background-position: center center;
     background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
+    background-attachment: fixed; /*la imagen de fondo no se mueve*/
+    background-repeat: no-repeat;
+    height: 700px; /* Ajusta la altura según sea necesario */
+    color: white; /* Color del texto, si es necesario */
     padding: 20px; /*espacio alrededor del contenido*/
     text-align: center; 
-    background-attachment: fixed; /*la imagen de fondo no se mueve*/
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el tamaño total */
+    overflow: hidden; /* Evita desbordamiento del contenido */
 }
 /* Media query para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
     header {
         background-attachment: scroll; /* Cambia a 'scroll' para móviles */
         height: 500px; /* Puedes ajustar la altura para dispositivos móviles */
     }
+    
 }
 .header-container {
     display: flex;

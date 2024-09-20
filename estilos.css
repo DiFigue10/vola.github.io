@@ -49,8 +49,11 @@ header {
     .header-container2{
         position: static;
 		margin: 100px 0;
-        max-width: 100%;
         overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+        max-width: 100%; /* Evita que el contenido se desborde */
+        padding: 0 20px; /* Agrega algo de espacio alrededor para evitar que el texto toque los bordes */
+        box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
     }
     .header-container nav a {
         margin: 10px 20px;
@@ -63,14 +66,12 @@ header {
         max-width: 100%;
         overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
     }
+    .service {
+        width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
+    }
     
 }
 
-@media screen and (max-width: 800px) {
-    .service, .header-container2 {
-        width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
-    }
-}
 
 @media screen and (max-width: 600px) {
     h2, h3 {
@@ -79,6 +80,7 @@ header {
 
     .header-container2 h2 {
         font-size: 32px; /* Ajusta el tamaño del título principal */
+        word-wrap: break-word; /* Asegura que el texto largo se divida en varias líneas */
     }
 
     .service p {

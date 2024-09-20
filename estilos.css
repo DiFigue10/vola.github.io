@@ -23,15 +23,25 @@ header {
     box-sizing: border-box; /* Asegura que el padding esté incluido en el tamaño total */
     overflow: hidden; /* Evita desbordamiento del contenido */
 }
+
 /* Media query para pantallas pequeñas (móviles) */
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
-        padding: 10px;
+        padding: 0px;
     }
     header {
         background-attachment: scroll; /* Cambia a 'scroll' para móviles */
         height: 500px; /* Puedes ajustar la altura para dispositivos móviles */
+    }
+    .header-container{
+        padding: 0
+    }
+    .header-container2{
+        padding: 0
+    }
+    #servicios{
+        padding: 20px; /* Añade un poco de espacio alrededor del contenido */
     }
     
 }

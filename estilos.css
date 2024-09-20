@@ -35,13 +35,19 @@ header {
         height: 500px; /* Puedes ajustar la altura para dispositivos móviles */
     }
     .header-container{
-        padding: 0
+        padding: 0;
+        width: 100%;
+        margin: auto
     }
     .header-container2{
-        padding: 0
+        padding: 0;
+        width: 100%;
+        margin: auto
     }
     #servicios{
-        padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+        padding: 20px; /* Añade un poco de espacio alrededor del contenido */;
+        width: 100%;
+        margin: auto
     }
     
 }

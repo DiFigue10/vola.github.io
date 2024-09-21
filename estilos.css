@@ -25,20 +25,22 @@ header {
 }
 
 /* Media query para pantallas pequeñas (móviles) */
-@media screen and (max-width: 800px) {
-    * {
+@media screen and (max-width: 600px) {
+    /* *{
         box-sizing: border-box;
-    }
+    }*/
     body {
         font-size: 14px;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
         overflow-x: hidden; /* Evita el desbordamiento horizontal */
     }
     header {
         position: static;
 		height: auto;
-        max-width: 100%;
+        width: 100%;
+        max-width: 100%; /* Evita que el contenido se desborde */
         overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
     }
     .header-container{
@@ -53,7 +55,14 @@ header {
         width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
         height: auto; /* Ajusta la altura automáticamente según el contenido */
         max-width: 100%; /* Evita que el contenido se desborde */
-        padding: 20px; /* Agrega algo de espacio alrededor para evitar que el texto toque los bordes */
+        padding: 100px; /* Agrega algo de espacio alrededor para evitar que el texto toque los bordes */
+    }
+    .header-container2 h2 {
+        font-size: 32px; /* Reduce el tamaño del texto */
+    }
+
+    .header-container2 h3 {
+        font-size: 18px; /* Ajusta el tamaño del subtítulo */
     }
     .header-container nav a {
         margin: 10px 20px;
@@ -67,20 +76,19 @@ header {
         overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
     }
     .service {
-        width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
+       /* width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
     }
-    
+    .services {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        width: 100%;
+    }
 }
 
 
 @media screen and (max-width: 600px) {
     h2, h3 {
         font-size: 24px; /* Reduce el tamaño de los encabezados en pantallas pequeñas */
-    }
-
-    .header-container2 h2 {
-        font-size: 32px; /* Ajusta el tamaño del título principal */
-        word-wrap: break-word; /* Asegura que el texto largo se divida en varias líneas */
     }
 
     .service p {
@@ -93,16 +101,7 @@ header {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .services {
-        flex-direction: column;
-        align-items: center; /* Centra los elementos */
-    }
 
-    .service {
-        width: 100%; /* Asegura que ocupen todo el ancho disponible */
-    }
-}
 
 .header-container {
     display: flex;
@@ -179,6 +178,7 @@ section {
     display: flex;
     justify-content: space-around;
     gap: 20px; /* Añade espacio entre los elementos */
+   
 }
 
 /*Estilo para cada servcio*/
@@ -187,7 +187,7 @@ section {
     background-color: #F7F7F7; /* Color de fondo de cada servicio */
     border: 1px solid #ddd; /* Borde alrededor de cada servicio */
     padding: 20px;
-    width: 30%;
+   /* width: 30%; */
     border-radius: 10px; /* Bordes redondeados */
     transition: transform 0.3s, box-shadow 0.3s;
 }

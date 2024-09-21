@@ -23,86 +23,16 @@ header {
     box-sizing: border-box; /* Asegura que el padding esté incluido en el tamaño total */
     overflow: hidden; /* Evita desbordamiento del contenido */
 }
-
-/* Media query para pantallas pequeñas (móviles) */
-@media screen and (max-width: 600px) {
-    /* *{
-        box-sizing: border-box;
-    }*/
-    body {
-        font-size: 14px;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden; /* Evita el desbordamiento horizontal */
-    }
-    header {
-        position: static;
-		height: auto;
-        width: 100%;
-        max-width: 100%; /* Evita que el contenido se desborde */
-        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
-    }
-    .header-container{
-        text-align: center;
-        max-width: 100%;
-        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
-    }
-    .header-container2{
-        position: static;
-		margin: 100px 0;
-        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
-        width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-        height: auto; /* Ajusta la altura automáticamente según el contenido */
-        max-width: 100%; /* Evita que el contenido se desborde */
-        padding: 100px; /* Agrega algo de espacio alrededor para evitar que el texto toque los bordes */
-    }
-    .header-container2 h2 {
-        font-size: 32px; /* Reduce el tamaño del texto */
-    }
-
-    .header-container2 h3 {
-        font-size: 18px; /* Ajusta el tamaño del subtítulo */
-    }
-    .header-container nav a {
-        margin: 10px 20px;
-    }
-    section {
-        max-width: 100%;
-        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
-    }
-    footer {
-        max-width: 100%;
-        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
-    }
-    .service {
-       /* width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
-    }
-    .services {
-        flex-direction: column;
-        align-items: center; /* Centra los elementos */
-        width: 100%;
-    }
+.container {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
-
-@media screen and (max-width: 600px) {
-    h2, h3 {
-        font-size: 24px; /* Reduce el tamaño de los encabezados en pantallas pequeñas */
-    }
-
-    .service p {
-        font-size: 14px; /* Reduce el tamaño del texto en los servicios */
-    }
-
-    button {
-        font-size: 14px; /* Ajusta el tamaño del texto en los botones */
-        padding: 8px 16px; /* Ajusta el padding en los botones */
-    }
-}
-
-
-
+/*Titulo y navegadores*/
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -134,15 +64,14 @@ header {
     color: #DAA520;
 }
 
-
+/*Texto principal*/
 .header-container2 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 90%;
-    width: 30%;
-    
+    width: 40%;  
 }
 .header-container2 h2{
     font-weight: bold;
@@ -153,52 +82,45 @@ header {
     font-weight: normal; /* Esto elimina el estilo de negrita */
     font-size: 18px;
     text-decoration: none;
-    margin: 0;
 }
 
-    
-/*Section*/
+/*Section: Inicio , Servicios , Agenda , Contactanos*/
 section {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     background-color: #FFFFFF; /* Blanco */
 }
+/*Inicio*/
 
-/*Section : Servicios*/
+/*Servicios*/
 #servicios{
     background-color: #1D3557; /* Blanco */
     padding: 20px; /* Añade un poco de espacio alrededor del contenido */
 }
 .header-container3{
-    color:#F8F9FA
+    color:#F8F9FA /*Encabezado*/;
 }
-
-/* Estilos para la sección de servicios */
+/* Estilos para la seccion de servicios */
 .services {
     display: flex;
     justify-content: space-around;
     gap: 20px; /* Añade espacio entre los elementos */
    
 }
-
-/*Estilo para cada servcio*/
+/*Estilo para cada servicio*/
 .service {
     font-family: 'Open Sans', sans-serif;
     background-color: #F7F7F7; /* Color de fondo de cada servicio */
     border: 1px solid #ddd; /* Borde alrededor de cada servicio */
     padding: 20px;
-   /* width: 30%; */
+    width: 50%;
     border-radius: 10px; /* Bordes redondeados */
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
-
-
 .service:hover {
     transform: scale(1.05); /* Expande ligeramente el servicio */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
-
 /*Button para los servicios*/
 button {
     font-family: 'Open Sans', sans-serif;
@@ -209,13 +131,23 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #457B9D; /* Azul claro - Creatividad y frescura */
 }
 
+/*Agenda*/
 
-
+/*Contactanos*/
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button {
+    width: 100%;
+}
 /*Footer*/
 footer {
     background-color: #1D3557; /* Azul oscuro - Confianza y profesionalismo */
@@ -224,15 +156,86 @@ footer {
     color: white;
 }
 
-/* Formulario de contacto */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+/* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+    /* *{
+        box-sizing: border-box;
+    }*/
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    }
+    header {
+        position: static;
+        width: 100%;
+        max-width: 100%; /* Evita que el contenido se desborde */
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+    }
+    .header-container{
+        text-align: center;
+        max-width: 100%;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+    }
+    .header-container2{
+        position: static;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+        max-width: 100%; /* Evita que el contenido se desborde */
+    }
+    .header-container2 h2 {
+        font-size: 32px; /* Reduce el tamaño del texto */
+    }
+
+    .header-container2 h3 {
+        font-size: 18px; /* Ajusta el tamaño del subtítulo */
+    }
+    .header-container nav a {
+        margin: 10px 20px;
+    }
+    section {
+        max-width: 100%;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+    }
+    footer {
+        max-width: 100%;
+        overflow: hidden; /* Evita que el contenido se desborde fuera del contenedor */
+    }
+    .service {
+       width: 80%;
+    }
+    .services {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        width: 100%;
+    }
 }
 
-form button {
-    width: 100%;
+
+@media screen and (max-width: 600px) {
+    h2, h3 {
+        font-size: 24px; /* Reduce el tamaño de los encabezados en pantallas pequeñas */
+    }
+
+    .service p {
+        font-size: 14px; /* Reduce el tamaño del texto en los servicios */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta el tamaño del texto en los botones */
+        padding: 8px 16px; /* Ajusta el padding en los botones */
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
